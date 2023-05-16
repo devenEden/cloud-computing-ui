@@ -51,7 +51,7 @@ export default function ProfilePage(props) {
         }}
         {...rest}
       />
-      <Parallax small filter image="/img/profile-bg.jpg" />
+      <Parallax small filter image="/img/bg3.jpg" />
       <div className={classNames(classes.main, classes.mainRaised)}>
         {isLoading ? (
           <PageChange />
