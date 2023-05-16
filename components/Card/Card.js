@@ -19,9 +19,10 @@ export default function Card(props) {
     [classes.card]: true,
     [classes.cardPlain]: plain,
     [classes.cardCarousel]: carousel,
-    [className]: className !== undefined
+    [className]: className !== undefined,
   });
   return (
+    // eslint-disable-next-line react/jsx-props-no-spreading
     <div className={cardClasses} {...rest}>
       {children}
     </div>
@@ -32,5 +33,5 @@ Card.propTypes = {
   className: PropTypes.string,
   plain: PropTypes.bool,
   carousel: PropTypes.bool,
-  children: PropTypes.node
+  children: PropTypes.node,
 };

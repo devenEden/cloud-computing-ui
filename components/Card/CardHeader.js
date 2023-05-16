@@ -19,9 +19,10 @@ export default function CardHeader(props) {
     [classes.cardHeader]: true,
     [classes[color + "CardHeader"]]: color,
     [classes.cardHeaderPlain]: plain,
-    [className]: className !== undefined
+    [className]: className !== undefined,
   });
   return (
+    // eslint-disable-next-line react/jsx-props-no-spreading
     <div className={cardHeaderClasses} {...rest}>
       {children}
     </div>
@@ -32,5 +33,5 @@ CardHeader.propTypes = {
   className: PropTypes.string,
   color: PropTypes.oneOf(["warning", "success", "danger", "info", "primary"]),
   plain: PropTypes.bool,
-  children: PropTypes.node
+  children: PropTypes.node,
 };
