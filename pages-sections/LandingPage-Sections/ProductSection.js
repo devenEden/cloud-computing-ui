@@ -67,7 +67,7 @@ export default function ProductSection() {
           </GridContainer>
           <div>
             <GridContainer justify="center">
-              {data.blogs?.map((blog) => {
+              {data?.blogs?.map((blog) => {
                 return (
                   <GridItem key={blog._id} xs={12} sm={6} md={4}>
                     <Card className={classes[cardAnimaton]}>
